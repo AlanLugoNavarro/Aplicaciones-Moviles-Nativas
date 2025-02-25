@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="528dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/mapa9_foreground" />
+
+    <Button
+        android:id="@+id/btn_Salir1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibtn_arriba1"
+        android:layout_width="71dp"
+        android:layout_height="58dp"
+        android:background="#FFC107"
+        android:contentDescription="Arriba"
+        android:hapticFeedbackEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@mipmap/flecha" />
+
+    <ImageButton
+        android:id="@+id/ibtn_der1"
+        android:layout_width="71dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="56dp"
+        android:background="#FFC107"
+        android:contentDescription="Derecha"
+        android:hapticFeedbackEnabled="false"
+        android:rotation="90"
+        android:translationY="1sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toEndOf="@+id/ibtn_izq1"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_arriba1"
+        app:srcCompat="@mipmap/flecha" />
+
+    <ImageButton
+        android:id="@+id/ibtn_ab1"
+        android:layout_width="71dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="56dp"
+        android:background="#FFC107"
+        android:contentDescription="Abajo"
+        android:hapticFeedbackEnabled="false"
+        android:rotation="180"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Salir1"
+        app:layout_constraintHorizontal_bias="0.696"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibtn_arriba1"
+        app:srcCompat="@mipmap/flecha" />
+
+    <ImageButton
+        android:id="@+id/ibtn_izq1"
+        android:layout_width="71dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="56dp"
+        android:background="#FFC107"
+        android:contentDescription="Izquierda"
+        android:hapticFeedbackEnabled="false"
+        android:rotation="270"
+        android:translationY="0.1sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@mipmap/flecha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
